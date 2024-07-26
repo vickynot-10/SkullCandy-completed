@@ -1,0 +1,1792 @@
+    @media screen and (min-width:320px) and (max-width:480px) {
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin: 0;
+            padding: 0;
+        }
+        #cart-items {
+            min-height: 30dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        #quantity {
+            min-width: 60px;
+            width: auto;
+            max-width: 90px;
+            display: flex;
+            flex-direction: row;
+        }
+        .productid {
+            font-size: 15px;
+            text-align: center;
+            min-width: 15px;
+            width: auto;
+        }
+        #price {
+            font-size: 15px;
+        }
+        #hp-img {
+            margin-top: 10px;
+            width: 120px;
+            height: 120px;
+        }
+        #cart-screen {
+            display: none;
+        }
+        #header-res {
+            width: 100%;
+            height: 80px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 30;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            background-color: black
+        }
+        #header-res p {
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        #skull-div {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        #skull-div img {
+            margin: 7px;
+            width: 40px;
+            height: 40px;
+        }
+        #delete-cart {
+            position: absolute;
+            top: 60%;
+            right: 25%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        /* BUY NOW.CSS */
+        #contents {
+            height: auto;
+            min-height: 100dvh;
+            width: 100%;
+        }
+        #img-small {
+            height: 200px;
+            width: 200px;
+        }
+        #buy-contents {
+            height: auto;
+            min-height: 95dvh;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        #hp-tagline {
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #hp-name {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        #hp-price {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        #buy-now {
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            margin-top: 5px;
+        }
+        #choose-color {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 200px;
+            height: 40px;
+            background-color: white;
+        }
+        #review-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details p {
+            text-align: center;
+        }
+        #buy-contents2 {
+            display: none;
+        }
+        #buy-contents2::before {
+            height: 0px;
+            width: 0px;
+            z-index: 0;
+        }
+        #headphone-details {
+            width: 100%;
+            height: auto;
+            min-height: 50vh;
+            background-color: green;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #headphone-details p {
+            font-size: 15px;
+        }
+        #review-page {
+            height: auto;
+            min-height: 100dvh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        #review-header p {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #review-write-btn {
+            padding: 0;
+            height: 50px;
+            width: 150px;
+            background-color: #414a4c;
+        }
+        #review-contents {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: auto;
+            min-height: 60dvh;
+        }
+        #content-details {
+            margin-top: 8px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+        #guides {
+            height: auto;
+            min-height: 110dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            flex-direction: column;
+        }
+        #text-guide p {
+            font-size: 17px;
+        }
+        #guide-btns {
+            height: auto;
+            min-height: 90dvh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #guide-btn1 {
+            width: 260px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top right, #FFA62F, #FFA62F, #F89880, #fc3468, #FF69B4);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn2 {
+            width: 260px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top, #4B70F5, #478CCF, #00c04b);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn3 {
+            width: 260px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top left, #50b8e7, #00c04b, #8ABC40, #F2E318);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #head img {
+            height: 20px;
+            width: 20px;
+            margin-top: 9px;
+        }
+        #head p {
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #desc p {
+            font-size: 10px;
+            text-align: center;
+        }
+        #guide-st-btn {
+            height: 45px;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        #help-btn-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        #help-btn {
+            border: 1px solid white;
+            height: 50px;
+            margin-top: 20px;
+            width: 180px;
+            border-radius: 50px;
+        }
+        /* RESPONSIVE FOR LOGIN.CSS */
+        #twoforms {
+            height: auto;
+            min-height: 90dvh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #sign-in-header {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #lognin-header {
+            height: auto;
+            min-height: 20dvh;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #login-p,
+        #register-p {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        #register-header {
+            height: auto;
+            min-height: 40dvh;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #cart {
+            display: none;
+        }
+        #logos-2 {
+            display: none;
+        }
+        #res-start {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            margin: 5px 2px;
+            height: 50px;
+        }
+        #options-screen {
+            height: 650px;
+            width: 300px;
+            background-color: white;
+            position: fixed;
+            top: 0%;
+            left: -101%;
+        }
+        #options-list {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 500px;
+            width: auto;
+        }
+        #lists-item {
+            height: 100px;
+            width: auto;
+            border-bottom: 2px solid black;
+        }
+        #options-list p {
+            padding: 10px;
+            font-weight: bold;
+            font-weight: 17px;
+            color: black;
+            text-transform: uppercase;
+        }
+        #coupon-text {
+            font-size: medium;
+            flex-wrap: wrap;
+        }
+        #btns-9 {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        #headphone-btns {
+            width: 9em;
+            height: 5em;
+        }
+        #main-footer {
+            width: auto;
+            height: 750px;
+            position: relative;
+        }
+        #details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 2px 2px;
+            height: 38em;
+        }
+        #details1,
+        #deatils2 {
+            display: initial;
+        }
+        #social-pos {
+            position: absolute;
+            top: 55%;
+            left: 0;
+        }
+        #socials-1,
+        #social0 {
+            display: initial;
+        }
+        #socials-2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+        }
+        #email {
+            position: absolute;
+            left: 25%;
+        }
+        #follow-text {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        #contact-us {
+            text-align: center;
+            margin-top: 8px;
+        }
+        #headphones-img {
+            display: grid;
+            grid-template-columns: auto;
+        }
+        #imgs-grid img {
+            width: 18em;
+            height: 18em;
+        }
+    }
+    
+    @media screen and (min-width:481px) and (max-width:640px) {
+        body {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #cart-items {
+            min-height: 30dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        #quantity {
+            min-width: 60px;
+            width: auto;
+            max-width: 90px;
+            display: flex;
+            flex-direction: row;
+        }
+        .productid {
+            font-size: 15px;
+            text-align: center;
+            min-width: 15px;
+            width: auto;
+        }
+        #price {
+            font-size: 15px;
+        }
+        #hp-img {
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+        }
+        #cart-screen {
+            display: none;
+        }
+        #header-res {
+            width: 100%;
+            height: 80px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 30;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            background-color: black
+        }
+        #header-res p {
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        #skull-div {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        #skull-div img {
+            margin: 7px;
+            width: 40px;
+            height: 40px;
+        }
+        #delete-cart {
+            position: absolute;
+            top: 60%;
+            right: 25%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        /* RESPONSIVE FOR LOGIN.CSS */
+        #twoforms {
+            height: auto;
+            min-height: 90dvh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #sign-in-header {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #lognin-header {
+            height: auto;
+            min-height: 40dvh;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #login-p,
+        #register-p {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        #register-header {
+            height: auto;
+            min-height: 40dvh;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #contents {
+            height: auto;
+            min-height: 100vh;
+            width: 100%;
+        }
+        #buy-contents {
+            height: auto;
+            min-height: 90dvh;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        #hp-tagline {
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #hp-name {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #hp-price {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #buy-now {
+            width: 220px;
+            height: 50px;
+            background-color: white;
+            margin-top: 5px;
+        }
+        #choose-color {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 220px;
+            height: 50px;
+            background-color: white;
+        }
+        #review-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details p {
+            text-align: center;
+        }
+        #buy-contents2 {
+            display: none;
+        }
+        #buy-contents2::before {
+            height: 0px;
+            width: 0px;
+            z-index: 0;
+        }
+        #img-small {
+            height: 200px;
+            width: 200px;
+        }
+        #headphone-details {
+            width: 100%;
+            height: auto;
+            min-height: 50dvh;
+            background-color: green;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #headphone-details p {
+            font-size: 15px;
+        }
+        #review-page {
+            height: auto;
+            min-height: 90dvh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        #review-header p {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #review-write-btn {
+            padding: 0;
+            height: 60px;
+            width: 160px;
+            background-color: #414a4c;
+        }
+        #review-contents {
+            height: auto;
+            min-height: 70vh;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        #content-details {
+            margin-top: 8px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+        #guides {
+            height: auto;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            flex-direction: column;
+        }
+        #text-guide p {
+            font-size: 17px;
+        }
+        #guide-btns {
+            height: auto;
+            min-height: 70vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #guide-btn1 {
+            width: 280px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top right, #FFA62F, #FFA62F, #F89880, #fc3468, #FF69B4);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn2 {
+            width: 280px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top, #4B70F5, #478CCF, #00c04b);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn3 {
+            width: 280px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top left, #50b8e7, #00c04b, #8ABC40, #F2E318);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #head img {
+            height: 20px;
+            width: 20px;
+            margin-top: 9px;
+        }
+        #head p {
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #desc p {
+            font-size: 10px;
+            text-align: center;
+        }
+        #guide-st-btn {
+            height: 45px;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        #help-btn-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        #help-btn {
+            border: 1px solid white;
+            height: 50px;
+            margin-top: 20px;
+            width: 180px;
+            border-radius: 50px;
+        }
+        #cart {
+            display: none;
+        }
+        #logos-2 {
+            display: none;
+        }
+        #res-start {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            margin: 5px 2px;
+            height: 50px;
+        }
+        #options-screen {
+            height: 650px;
+            width: 370px;
+            background-color: white;
+            position: fixed;
+            top: 0%;
+            left: -101%;
+        }
+        #options-list {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 500px;
+            width: auto;
+        }
+        #lists-item {
+            height: 100px;
+            width: auto;
+            border-bottom: 2px solid black;
+        }
+        #options-list p {
+            padding: 10px;
+            font-weight: bold;
+            font-weight: 17px;
+            color: black;
+            text-transform: uppercase;
+        }
+        #btns-9 {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        #headphone-btns {
+            width: 12em;
+            height: 5em;
+        }
+        #headphones-img {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 2px;
+        }
+        #imgs-grid img {
+            width: 15em;
+            height: 15em;
+        }
+        #main-footer {
+            width: auto;
+            height: 750px;
+            position: relative;
+        }
+        #details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 2px 12px;
+            height: 38em;
+        }
+        #details1,
+        #deatils2 {
+            display: initial;
+        }
+        #social-pos {
+            position: absolute;
+            top: 55%;
+            left: 0;
+        }
+        #socials-1,
+        #social0 {
+            display: initial;
+        }
+        #socials-2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+        #email {
+            position: absolute;
+            left: 25%;
+        }
+        #follow-text {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        #contact-us {
+            text-align: center;
+            margin-top: 8px;
+        }
+    }
+    
+    @media screen and (min-width:641px) and (max-width:960px) {
+        body {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /* RESPONSIVE FOR LOGIN.CSS */
+        #twoforms {
+            height: auto;
+            min-height: 90dvh;
+            width: 95%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #sign-in-header {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #lognin-header {
+            height: auto;
+            min-height: 40dvh;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #login-p,
+        #register-p {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        #register-header {
+            height: auto;
+            min-height: 40dvh;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #contents {
+            height: auto;
+            min-height: 100vh;
+            width: 100%;
+        }
+        #img-small {
+            height: 450px;
+            width: 450px;
+        }
+        #buy-contents {
+            height: auto;
+            min-height: 90vh;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        #hp-tagline {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #hp-name {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #hp-price {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #buy-now {
+            width: 210px;
+            height: 60px;
+            background-color: white;
+            margin-top: 5px;
+        }
+        #choose-color {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 210px;
+            height: 60px;
+            background-color: white;
+        }
+        #review-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details p {
+            text-align: center;
+        }
+        #buy-contents2 {
+            display: none;
+        }
+        #buy-contents2::before {
+            height: 0px;
+            width: 0px;
+            z-index: 0;
+        }
+        #headphone-details {
+            width: 100%;
+            height: auto;
+            min-height: 60vh;
+            background-color: green;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #hp-points {
+            height: auto;
+            min-height: 30vh;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        #headphone-details p {
+            font-size: 25px;
+        }
+        #review-page {
+            height: auto;
+            min-height: 100vh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #review-header p {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #review-write-btn {
+            padding: 0;
+            height: 70px;
+            width: 200px;
+            background-color: #414a4c;
+        }
+        #review-contents {
+            min-height: 60vh;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details {
+            margin-top: 8px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details p {
+            font-size: 20px;
+        }
+        #guides {
+            height: auto;
+            min-height: 100dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            flex-direction: column;
+        }
+        #guide-p1 {
+            font-size: 30px;
+        }
+        #guide-p2 {
+            font-size: 20px;
+        }
+        #guide-btns {
+            height: auto;
+            min-height: 90dvh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #guide-btn1 {
+            width: 380px;
+            height: 230px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top right, #FFA62F, #FFA62F, #F89880, #fc3468, #FF69B4);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn2 {
+            width: 380px;
+            height: 230px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top, #4B70F5, #478CCF, #00c04b);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn3 {
+            width: 380px;
+            height: 230px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top left, #50b8e7, #00c04b, #8ABC40, #F2E318);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #head img {
+            height: 25px;
+            width: 25px;
+            margin-top: 9px;
+        }
+        #head p {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #desc p {
+            font-size: 15px;
+            text-align: center;
+        }
+        #guide-st-btn {
+            height: 50px;
+            width: 120px;
+            margin-bottom: 5px;
+        }
+        #help-btn-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        #help-btn {
+            border: 1px solid white;
+            height: 60px;
+            margin-top: 10px;
+            width: 200px;
+            border-radius: 50px;
+        }
+        #res-start {
+            display: none;
+        }
+        #options-screen {
+            display: none;
+        }
+        #section-1::after {
+            content: ' ';
+            height: 0px;
+            width: 0px;
+        }
+        #inside-skully-p::after {
+            content: ' ';
+            height: 0px;
+            width: 0px;
+        }
+        #inside-skull-details {
+            height: 250px;
+            width: 100%;
+            background-color: white;
+            position: relative;
+            top: 13%;
+            left: 0;
+            display: none;
+            margin: 0;
+            padding: 0;
+        }
+        #inside-skull-flex:first-child p {
+            font-size: 10px;
+            font-weight: bold;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 5px;
+            padding: 4px;
+            position: relative;
+        }
+        #btns-9 {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        #headphone-btns {
+            margin: 7px 7px;
+            width: 15em;
+            height: 5em;
+        }
+        #headphones-img {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 7px;
+        }
+        #imgs-grid img {
+            width: 20em;
+            height: 20em;
+        }
+        #main-footer {
+            width: auto;
+            height: 750px;
+            position: relative;
+        }
+        #details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 2px 12px;
+            height: 38em;
+        }
+        #details1,
+        #deatils2 {
+            display: initial;
+        }
+        #social-pos {
+            position: absolute;
+            top: 55%;
+            left: 0;
+        }
+        #socials-1,
+        #social0 {
+            display: initial;
+        }
+        #socials-2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+        #email {
+            position: absolute;
+            left: 30%;
+            top: 10%;
+        }
+        #follow-text {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        #contact-us {
+            text-align: center;
+            margin-top: 8px;
+        }
+    }
+    
+    @media screen and (min-width:961px) and (max-width:1024px) {
+        body {
+            max-width: 100%;
+        }
+        #img-small-div {
+            display: none;
+        }
+        #sign-in-header {
+            font-size: 45px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bolder;
+        }
+        #twoforms {
+            height: auto;
+            min-height: 100dvh;
+            width: auto;
+            min-width: 90%;
+            max-width: 95%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+        #contents {
+            height: auto;
+            min-height: 100vh;
+            width: 100%;
+        }
+        #buy-contents {
+            height: auto;
+            min-height: 90vh;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        #hp-tagline {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #hp-name {
+            text-align: center;
+            font-size: 25px;
+        }
+        #hp-price {
+            text-align: center;
+            font-size: 25px;
+        }
+        #buy-now {
+            width: 230px;
+            height: 70px;
+            background-color: white;
+            margin-top: 10px;
+        }
+        #choose-color {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 230px;
+            height: 70px;
+            background-color: white;
+        }
+        #review-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #headphone-details {
+            width: 100%;
+            height: auto;
+            min-height: 70vh;
+            background-color: green;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #hp-points {
+            min-height: 60vh;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        #buy-contents2 {
+            position: relative;
+            height: inherit;
+            overflow: hidden;
+            z-index: 1;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        #buy-contents2::before {
+            content: '';
+            position: absolute;
+            top: -3%;
+            right: -27%;
+            transform: skewX(25deg);
+            height: inherit;
+            width: 400px;
+            z-index: -1;
+            background-color: #A9A9A9;
+        }
+        #headphone-details p {
+            font-size: 35px;
+        }
+        #review-page {
+            min-height: 100dvh;
+            height: auto;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #review-header p {
+            margin-top: 10px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #review-write-btn {
+            padding: 0;
+            height: 70px;
+            width: 240px;
+            background-color: #414a4c;
+        }
+        #review-contents {
+            min-height: 70dvh;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details {
+            margin-top: 8px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details p {
+            font-size: 20px;
+            text-align: center;
+        }
+        #guides {
+            height: auto;
+            min-height: 100dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            flex-direction: column;
+        }
+        #guide-p1 {
+            font-size: 35px;
+        }
+        #guide-p2 {
+            font-size: 30px;
+        }
+        #guide-btns {
+            height: auto;
+            min-height: 90vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        #guide-btn1 {
+            width: 400px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top right, #FFA62F, #FFA62F, #F89880, #fc3468, #FF69B4);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn2 {
+            width: 400px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top, #4B70F5, #478CCF, #00c04b);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn3 {
+            width: 400px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: linear-gradient(to top left, #50b8e7, #00c04b, #8ABC40, #F2E318);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #head img {
+            height: 30px;
+            width: 30px;
+            margin-top: 9px;
+        }
+        #head p {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #desc p {
+            font-size: 25px;
+            text-align: center;
+        }
+        #guide-st-btn {
+            height: 50px;
+            width: 120px;
+            margin-bottom: 5px;
+        }
+        #help-btn-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        #help-btn {
+            border: 1px solid white;
+            height: 70px;
+            margin-top: 10px;
+            width: 220px;
+            border-radius: 50px;
+        }
+        #section-1::after {
+            content: ' ';
+            height: 0px;
+            width: 0px;
+        }
+        #inside-skully-p::after {
+            content: ' ';
+            height: 0px;
+            width: 0px;
+        }
+        #inside-skull-details {
+            height: 250px;
+            width: 100%;
+            background-color: white;
+            position: relative;
+            top: 13%;
+            left: 0;
+            display: none;
+            margin: 0;
+            padding: 0;
+        }
+        #inside-skull-flex:first-child p {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 5px;
+            padding: 4px;
+            position: relative;
+        }
+        #res-start {
+            display: none;
+        }
+        #options-screen {
+            display: none;
+        }
+        #btns-9 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        #headphone-btns {
+            margin: 7px 7px;
+            width: 17em;
+            height: 5em;
+        }
+        #headphones-img {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 7px;
+        }
+        #imgs-grid img {
+            width: 25em;
+            height: 25em;
+        }
+        #main-footer {
+            width: auto;
+            height: 750px;
+            position: relative;
+        }
+        #details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 2px 12px;
+            height: 38em;
+        }
+        #details1,
+        #deatils2 {
+            display: initial;
+        }
+        #social-pos {
+            position: absolute;
+            top: 55%;
+            left: 0;
+        }
+        #socials-1,
+        #social0 {
+            display: initial;
+        }
+        #socials-2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+        #email {
+            position: absolute;
+            left: 35%;
+            top: 10%;
+        }
+        #follow-text {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        #contact-us {
+            text-align: center;
+            margin-top: 8px;
+        }
+    }
+    
+    @media screen and (min-width:1025px) and (max-width:1064px) {
+        body {
+            max-width: 100%;
+        }
+        #img-small-div {
+            display: none;
+        }
+        #contents {
+            height: auto;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-self: center;
+        }
+        #buy-contents {
+            height: auto;
+            min-height: 90vh;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        #hp-tagline {
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        #hp-name {
+            text-align: center;
+            font-size: 30px;
+        }
+        #hp-price {
+            text-align: center;
+            font-size: 25px;
+        }
+        #buy-now {
+            width: 250px;
+            height: 75px;
+            background-color: white;
+            margin-top: 14px;
+        }
+        #choose-color {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 250px;
+            height: 75px;
+            background-color: white;
+        }
+        #review-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #headphone-details {
+            width: 100%;
+            height: auto;
+            min-height: 80dvh;
+            background-color: green;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #hp-points {
+            height: auto;
+            min-height: 70dvh;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        #buy-contents2 {
+            position: relative;
+            height: inherit;
+            overflow: hidden;
+            z-index: 1;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        #buy-contents2::before {
+            content: '';
+            position: absolute;
+            top: -3%;
+            right: -27%;
+            transform: skewX(25deg);
+            height: inherit;
+            width: 400px;
+            z-index: -1;
+            background-color: #A9A9A9;
+        }
+        #headphone-details p {
+            font-size: 45px;
+        }
+        #review-page {
+            height: auto;
+            min-height: 90vh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #review-header p {
+            margin-top: 17px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        #review-write-btn {
+            padding: 0;
+            margin-top: 15px;
+            height: 80px;
+            width: 260px;
+            background-color: #414a4c;
+        }
+        #review-contents {
+            height: auto;
+            min-height: 70dvh;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details {
+            margin-top: 8px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content-details p {
+            font-size: 30px;
+            text-align: center;
+        }
+        #guides {
+            height: auto;
+            min-height: 100dvh;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            flex-direction: column;
+        }
+        #guide-p1 {
+            font-size: 40px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        #guide-p2 {
+            text-align: center;
+            font-size: 35px;
+            margin-top: 10px;
+        }
+        #guide-btns {
+            height: auto;
+            min-height: 80dvh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+        #guide-btn1 {
+            width: 350px;
+            height: 300px;
+            background-image: linear-gradient(to top right, #FFA62F, #FFA62F, #F89880, #fc3468, #FF69B4);
+            display: flex;
+            margin: 0 8px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn2 {
+            width: 350px;
+            height: 300px;
+            margin: 0 8px;
+            background-image: linear-gradient(to top, #4B70F5, #478CCF, #00c04b);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #guide-btn3 {
+            width: 350px;
+            height: 300px;
+            margin: 0 8px;
+            background-image: linear-gradient(to top left, #50b8e7, #00c04b, #8ABC40, #F2E318);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+        #head img {
+            margin-top: 5px;
+            height: 30px;
+            width: 30px;
+        }
+        #head p {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #desc p {
+            font-size: 25px;
+            text-align: center;
+        }
+        #guide-st-btn {
+            height: 50px;
+            width: 120px;
+            margin-bottom: 5px;
+        }
+        #help-btn-div {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            align-items: center;
+            width: 100%;
+        }
+        #help-btn {
+            border: 1px solid white;
+            height: 70px;
+            margin-top: 10px;
+            width: 220px;
+            border-radius: 50px;
+        }
+        #inside-skull-flex:first-child p {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 5px;
+            padding: 4px;
+            position: relative;
+        }
+        #res-start {
+            display: none;
+        }
+        #options-screen {
+            display: none;
+        }
+        #btns-9>button:last-child {
+            width: initial;
+            grid-column: 1/span 2;
+        }
+    }
+    
+    @media screen and (min-width:1065px) {
+        body {
+            max-width: 100%;
+        }
+        #img-small-div {
+            display: none;
+        }
+        #res-start {
+            display: none;
+        }
+        #options-screen {
+            display: none;
+        }
+        #btns-9>button:last-child {
+            width: initial;
+            grid-column: 1/span 2;
+        }
+    }

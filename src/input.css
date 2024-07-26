@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .btns {
+        @apply bg-slate-200 w-64 h-14 text-black relative z-10 overflow-hidden;
+    }
+    .btns-col {
+        @apply bg-slate-200 h-14 text-black relative z-10 overflow-hidden;
+    }
+    .buy-now-btn {
+        @apply h-11 w-40 text-white bg-LightBlack mt-5 p-2 relative z-10 overflow-hidden;
+    }
+    .footer-p {
+        @apply text-white font-light mt-3;
+    }
+    .sec1-p {
+        @apply text-black font-normal cursor-pointer;
+    }
+    .sec1-p2 {
+        @apply text-red-600 font-medium cursor-pointer;
+    }
+}

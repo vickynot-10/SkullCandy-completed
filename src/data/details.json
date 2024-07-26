@@ -1,0 +1,85 @@
+[{
+    "id": 1,
+    "name": "Ink’d®+ Earbuds with Microphone",
+    "price": 100,
+    "image": "images/pngegg (1).png",
+    "color": "Pink",
+    "tagline": "THE ORIGINAL ESSENTIAL."
+}, {
+    "id": 2,
+    "name": "Jib Earbuds with Microphone",
+    "price": 200,
+    "image": "images/pngegg (2).png",
+    "color": "Violet",
+    "tagline": "VOICE CONTROL. ADVENTURE READY."
+}, {
+    "id": 3,
+    "name": "Jib Earbuds with Microphone",
+    "price": 300,
+    "image": "images/pngegg (3).png",
+    "color": "SkyBlue",
+    "tagline": "EFFORTLESS SOUND."
+}, {
+    "id": 4,
+    "name": "Jib™+ Wireless Earbuds",
+    "price": 400,
+    "image": "images/pngegg (4).png",
+    "color": "Black",
+    "tagline": "WIRELESS SIMPLICITY"
+}, {
+    "id": 5,
+    "name": "Jib Earbuds with Microphone",
+    "price": 500,
+    "image": "images/pngegg (10).png",
+    "color": "White",
+    "tagline": "EFFORTLESS SOUND."
+}, {
+    "id": 6,
+    "name": "Crusher® ANC 2 Sensory Bass Headphone",
+    "price": 600,
+    "image": "images/pngegg (5).png",
+    "color": "White",
+    "tagline": "UNBEATABLE BASS, NOISE CANCELING."
+}, {
+    "id": 7,
+    "name": "Riff On-Ear Headphone",
+    "price": 700,
+    "image": "images/pngegg (6).png",
+    "color": "Violet",
+    "tagline": "TUNED IN, TURNED UP."
+}, {
+    "id": 8,
+    "name": "Cassette™ Wireless On-Ear Headphones",
+    "price": 800,
+    "image": "images/pngegg (7).png",
+    "color": "Gray",
+    "tagline": "REMIX YOUR STYLE."
+}, {
+    "id": 9,
+    "name": "Grind® True Wired Earbuds",
+    "price": 900,
+    "image": "images/pngegg (9).png",
+    "color": "Black",
+    "tagline": "UNBEATABLE BASS, NOISE CANCELING."
+}, {
+    "id": 10,
+    "name": "Push™ Active True Wireless Earbuds",
+    "price": 1000,
+    "image": "images/bud2.png",
+    "color": "Green",
+    "tagline": "MINI AND MIGHTY."
+}, {
+    "id": 11,
+    "name": "Sesh® ANC True Wireless Earbuds",
+    "price": 1100,
+    "image": "images/buds1.png",
+    "color": "Black",
+    "tagline": "TOTALLY WIRELESS ESSENTIAL."
+}, {
+    "id": 12,
+    "name": "Skullcandy EcoBuds™",
+    "price": 1200,
+    "image": "images/buds3.png",
+    "color": "Glacier",
+    "tagline": "MINI, MIGHTY, FINDABLE."
+}]

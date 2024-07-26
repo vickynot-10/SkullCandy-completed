@@ -1,0 +1,238 @@
+#contents {
+    width: 100%;
+    height: auto;
+    min-height: 100dvh;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#review-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#buy-contents {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+}
+
+#buy-contents2 {
+    position: relative;
+    height: inherit;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#buy-contents2::before {
+    content: '';
+    position: absolute;
+    top: -3%;
+    right: -27%;
+    transform: skewX(25deg);
+    height: inherit;
+    width: 400px;
+    z-index: -5;
+    background-color: #A9A9A9;
+}
+
+#choose-color {
+    padding: 6px;
+    display: flex;
+    justify-content: space-around;
+    width: 280px;
+    height: 50px;
+    background-color: white;
+}
+
+#buy-now {
+    width: 280px;
+    height: 50px;
+    background-color: white;
+    margin-top: 8px;
+}
+
+#review-btn1 {
+    height: 50px;
+    width: 140px;
+    border: 1px solid white;
+    border-left: unset;
+}
+
+#review-btn2 {
+    height: 50px;
+    width: 140px;
+    border: 1px solid white;
+    border-right: unset;
+    border-left: unset;
+}
+
+#headphone-details {
+    height: auto;
+    min-height: 70dvh;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hp-points {
+    min-height: 60dvh;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#review-page {
+    height: auto;
+    min-height: 100dvh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#review-write-btn {
+    height: 50px;
+    width: 180px;
+    background-color: #414a4c;
+}
+
+#review-write-btn::before {
+    content: ' ';
+    position: absolute;
+    width: 26px;
+    height: 68px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(30deg, 30deg);
+    background-color: #30080863;
+    z-index: -1;
+    transition: 0.4s width ease, 0.4s height ease;
+}
+
+#review-write-btn:hover::before {
+    width: 500px;
+    height: 500px;
+}
+
+#review-contents {
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70dvh;
+}
+
+#content-details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+}
+
+#star-section {
+    margin-left: 20px;
+}
+
+#guides {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    flex-direction: column;
+}
+
+#guide-btns {
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#guide-btn1 {
+    min-width: 380px;
+    width: auto;
+    max-width: 410px;
+    height: 320px;
+    background-image: linear-gradient(to top right, #FFA62F, #FFA62F, #F89880, #fc3468, #FF69B4);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+#head {
+    display: flex;
+    flex-direction: row;
+}
+
+#guide-btn2 {
+    min-width: 380px;
+    width: auto;
+    max-width: 410px;
+    height: 320px;
+    background-image: linear-gradient(to top, #4B70F5, #478CCF, #00c04b);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+#home-direct:hover {
+    color: red;
+}
+
+#guide-btn3 {
+    min-width: 380px;
+    width: auto;
+    max-width: 410px;
+    height: 320px;
+    background-image: linear-gradient(to top left, #50b8e7, #00c04b, #8ABC40, #F2E318);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+#help-btn {
+    margin-top: 10px;
+    border: 1px solid white;
+    height: 70px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+#hp-img-buy {
+    width: 35rem;
+    height: 35rem;
+}

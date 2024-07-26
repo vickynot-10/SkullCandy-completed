@@ -1,0 +1,159 @@
+#twoforms {
+    height: auto;
+    min-height: 100vh;
+    width: auto;
+    min-width: 90%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#lognin-header {
+    min-height: 300px;
+    height: auto;
+    min-width: 35%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#login-password {
+    width: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+#register-password {
+    width: 97%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+#register-password img {
+    margin: 0 auto;
+    position: absolute;
+    height: 25px;
+    cursor: pointer;
+    width: 25px;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+}
+
+#register-password-input {
+    height: 55px;
+    border: 1px solid skyblue;
+    margin: 8px 8px;
+    width: 100%;
+    padding-right: 60px;
+}
+
+#login-password input {
+    padding-right: 60px;
+    width: 100%;
+}
+
+#login-password img {
+    margin: 0 auto;
+    position: absolute;
+    height: 25px;
+    cursor: pointer;
+    width: 25px;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+}
+
+#register-header {
+    min-height: 300px;
+    height: auto;
+    min-width: 40%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#lognin-header p,
+#register-header p {
+    font-size: 27px;
+    text-transform: capitalize;
+}
+
+#form1 form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#form2 form {
+    border: 1px solid skyblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#username,
+#log-in-password {
+    height: 55px;
+    border: 1px solid skyblue;
+}
+
+#username1 {
+    height: 55px;
+    border: 1px solid skyblue;
+    margin: 8px 8px;
+}
+
+#email-input-register {
+    height: 55px;
+    border: 1px solid skyblue;
+    margin: 8px 8px;
+}
+
+#register-link p,
+#login-link p {
+    padding: 3px;
+    font-size: 15px;
+}
+
+#register-link button::before {
+    content: ' ';
+    position: absolute;
+    width: 26px;
+    height: 68px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(30deg, 30deg);
+    background-color: #99bac9;
+    z-index: -1;
+    transition: 0.4s width ease, 0.4s height ease;
+}
+
+#register-link button:hover::before {
+    width: 820px;
+    height: 820px;
+}
+
+#login-link button::before {
+    content: ' ';
+    position: absolute;
+    width: 26px;
+    height: 68px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(30deg, 30deg);
+    background-color: #99bac9;
+    z-index: -1;
+    transition: 0.4s width ease, 0.4s height ease;
+}
+
+#login-link button:hover::before {
+    width: 820px;
+    height: 820px;
+}

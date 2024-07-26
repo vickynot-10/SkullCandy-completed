@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skullcandy</title>
+    <link href="/images/skullcandy black logo.png" rel="icon" type="image/x-icon">
+    <link href="/output.css" rel="stylesheet">
+    <link href="/input.css" rel="stylesheet">
+    <link href="/custom.css" rel="stylesheet">
+    <link href='/buy_now.css' rel="stylesheet">
+    <link href="/cartBag.css" rel="stylesheet">
+    <link href="/responsive.css" rel="stylesheet">
+</head>
+
+<body class="h-full m-0 p-0">
+
+    <div id="header-res">
+        <div id="skull-div">
+            <img src="/images/skullcandy-logo-77844E575B-seeklogo.com.png">
+            <p>Skullcandy</p>
+        </div>
+        <div id="home-div">
+            <p class="cursor-pointer" id="home-direct">Home</p>
+        </div>
+
+    </div>
+
+    <div id="cart-heading">
+        <div id="bag-header">
+            <img src="/images/shopping_bag_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="bag">
+            <p>Cart Bag</p>
+        </div>
+    </div>
+
+    <div id="cart-mobile">
+        <div id="cart-single-item">
+        </div>
+    </div>
+    <script>
+        let PEl = document.getElementById("home-direct")
+        PEl.addEventListener("click", () => {
+            location.href = '/home';
+        })
+    </script>
+    <script type="module" src="./js/main.js"></script>
+
+
+</body>
+
+</html>
