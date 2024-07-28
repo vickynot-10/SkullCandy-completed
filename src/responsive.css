@@ -6,6 +6,9 @@
             margin: 0;
             padding: 0;
         }
+        html {
+            overflow-x: hidden;
+        }
         #cart-single-item {
             min-height: 90dvh;
             height: auto;
@@ -435,6 +438,11 @@
     @media screen and (min-width:481px) and (max-width:640px) {
         body {
             max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            overflow-x: hidden;
             margin: 0;
             padding: 0;
         }
