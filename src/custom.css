@@ -257,40 +257,47 @@ body {
 
 #img-close {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    min-height: 8dvh;
+    height: auto;
+    max-height: 12dvh;
+    background-color: #F5F5ED;
+    width: 100%;
     padding: 18px;
 }
 
 #cart-items {
     display: flex;
     flex-direction: row;
+    min-height: 23dvh;
+    height: auto;
+    position: relative;
     justify-content: space-around;
     padding: 3px;
-    position: relative;
-    border: 1px solid black;
-}
-
-#cart-items:nth-child(even) {
-    background-color: #F5EEE6;
-}
-
-#cart-items:nth-child(odd) {
-    background-color: #C7B7A3;
+    border-top: 1px solid black;
 }
 
 #cart-items p {
-    margin-top: 30px;
+    margin: auto 3px;
 }
 
 #quantity {
-    margin-top: 25px;
+    margin: auto 0;
+    min-height: 30px;
+    max-height: 35px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     min-width: 15%;
     width: auto;
     max-width: 20%;
+    background-color: #F5F5ED;
 }
 
 #cost {
-    margin-top: 30px;
+    margin: auto 5px;
 }
 
 #quantity button {
@@ -304,14 +311,18 @@ body {
 }
 
 #hp-img {
+    margin: auto 0;
     width: 100px;
     height: 100px;
 }
 
 #cart-screen {
-    width: 600px;
-    background-color: #C7B7A3;
-    height: 90vh;
+    min-width: 600px;
+    max-width: 650px;
+    width: auto;
+    background-color: white;
+    min-height: 90dvh;
+    height: auto;
     overflow-y: auto;
     position: relative;
     top: -10%;
@@ -345,8 +356,15 @@ body {
     height: 40px;
     width: 40px;
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 50%;
+    transform: translateX(-50%);
+}
+
+.productid {
+    font-weight: bold;
+    min-width: 35px;
+    width: auto;
 }
 
 #buyfromcart:hover {
@@ -357,8 +375,9 @@ body {
 
 #delete-cart {
     position: absolute;
-    top: 60%;
+    top: 74%;
     right: 30%;
+    transform: translateX(-30%);
     width: 30px;
     height: 30px;
     cursor: pointer;

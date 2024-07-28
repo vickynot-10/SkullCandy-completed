@@ -6,33 +6,47 @@
             margin: 0;
             padding: 0;
         }
+        #cart-single-item {
+            min-height: 90dvh;
+            height: auto;
+        }
         #cart-items {
             min-height: 30dvh;
             width: 100%;
+            height: auto;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             flex-direction: row;
+            padding: unset;
         }
         #quantity {
-            min-width: 60px;
-            width: auto;
-            max-width: 90px;
+            margin: auto 0;
+            min-height: 30px;
+            max-height: 35px;
+            height: auto;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: row;
+            min-width: 15%;
+            width: auto;
+            max-width: 20%;
+            background-color: #F5F5ED;
         }
         .productid {
             font-size: 15px;
             text-align: center;
-            min-width: 15px;
+            min-width: 20px;
             width: auto;
         }
         #price {
+            margin: auto 5px;
             font-size: 15px;
         }
         #hp-img {
-            margin-top: 10px;
-            width: 120px;
-            height: 120px;
+            margin: auto 0;
+            width: 80px;
+            height: 80px;
         }
         #cart-screen {
             display: none;
@@ -50,7 +64,8 @@
             background-color: black
         }
         #header-res p {
-            margin: 10px;
+            margin: auto 5px;
+            font-size: 16px;
             color: white;
             font-weight: bold;
         }
@@ -61,16 +76,17 @@
             flex-direction: row;
         }
         #skull-div img {
-            margin: 7px;
-            width: 40px;
-            height: 40px;
+            margin: auto 4px;
+            width: 45px;
+            height: 45px;
         }
         #delete-cart {
             position: absolute;
-            top: 60%;
+            top: 74%;
             right: 25%;
             width: 30px;
             height: 30px;
+            transform: translateX(-25%);
             cursor: pointer;
         }
         /* BUY NOW.CSS */
@@ -422,33 +438,47 @@
             margin: 0;
             padding: 0;
         }
+        #cart-single-item {
+            min-height: 90dvh;
+            height: auto;
+        }
         #cart-items {
             min-height: 30dvh;
             width: 100%;
+            height: auto;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             flex-direction: row;
+            padding: unset;
         }
         #quantity {
-            min-width: 60px;
-            width: auto;
-            max-width: 90px;
+            margin: auto 0;
+            min-height: 30px;
+            max-height: 35px;
+            height: auto;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: row;
+            min-width: 15%;
+            width: auto;
+            max-width: 20%;
+            background-color: #F5F5ED;
         }
         .productid {
             font-size: 15px;
             text-align: center;
-            min-width: 15px;
+            min-width: 20px;
             width: auto;
         }
         #price {
+            margin: auto 5px;
             font-size: 15px;
         }
         #hp-img {
-            margin-top: 10px;
-            width: 60px;
-            height: 60px;
+            margin: auto 0;
+            width: 80px;
+            height: 80px;
         }
         #cart-screen {
             display: none;
@@ -466,7 +496,8 @@
             background-color: black
         }
         #header-res p {
-            margin: 10px;
+            margin: auto 5px;
+            font-size: 16px;
             color: white;
             font-weight: bold;
         }
@@ -477,16 +508,17 @@
             flex-direction: row;
         }
         #skull-div img {
-            margin: 7px;
-            width: 40px;
-            height: 40px;
+            margin: auto 4px;
+            width: 45px;
+            height: 45px;
         }
         #delete-cart {
             position: absolute;
-            top: 60%;
+            top: 74%;
             right: 25%;
             width: 30px;
             height: 30px;
+            transform: translateX(-25%);
             cursor: pointer;
         }
         /* RESPONSIVE FOR LOGIN.CSS */

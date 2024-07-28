@@ -102,21 +102,15 @@ function getItemstoDisplay(id) {
 async function DisplayLocalItems(id, screen) {
     try {
         let data_id = id;
-        let ElScreen = screen;
-        console.log(ElScreen)
         let data = await fetchjson()
         listProducts = await data.json()
-
         let cartItems = document.createElement("div");
-
-
         cartItems.id = "cart-items";
         cartItems.innerHTML = `
         <img id="hp-img" src="${listProducts[id - 1].image}" >
         <p class='productid' id="${listProducts[id - 1].id}">${listProducts[id - 1].name}</p> 
         <p id="price">${listProducts[id - 1].price}</p> 
         `;
-
 
         let quantity = document.createElement("div");
         quantity.id = "quantity";
@@ -129,8 +123,8 @@ async function DisplayLocalItems(id, screen) {
         let decreaseBtn = quantity.querySelector('#decrease-quantity')
         let increaseBtn = quantity.querySelector('#increase-quantity')
 
-        decreaseBtn.addEventListener("click", DecreaseQuantity)
-        increaseBtn.addEventListener("click", IncreaseQuantity)
+        decreaseBtn.addEventListener("click", (e) => IncreaseAndDecrease(e, "sub"))
+        increaseBtn.addEventListener("click", (e) => IncreaseAndDecrease(e, "add"))
 
 
         let quantityCost = document.createElement("span");
@@ -139,7 +133,6 @@ async function DisplayLocalItems(id, screen) {
         let but3 = document.createElement("button");
         but3.id = "buyfromcart";
         but3.textContent = "Buy";
-
 
 
         let deleteCart = document.createElement('img');
@@ -156,43 +149,36 @@ async function DisplayLocalItems(id, screen) {
         buyfromcartbtn.addEventListener("click", () => {
             location.href = `/buynow?id=${data_id}`;
         })
-    } catch (e) {
-        console.log(e)
+    } catch (err) {
+        console.log(err)
     }
 }
 
-
-
-function IncreaseQuantity(event) {
-    let currentEl = event.target.parentElement
-    let quantityValue = currentEl.parentElement.querySelector('#quantity-value');
-    let quantityCost = currentEl.parentElement.querySelector('#cost');
-    let individualCost = currentEl.parentElement.querySelector('#price');
-    let quantityValueNumber = parseInt(quantityValue.innerHTML);
-    let individualCostNumber = parseInt(individualCost.innerHTML);
-    if (quantityValueNumber >= 0 && quantityValueNumber <= 30) {
-        quantityValueNumber += 1;
-        quantityValue.innerHTML = quantityValueNumber;
-        quantityCost.innerHTML = quantityValueNumber * individualCostNumber
-    }
-}
-
-function DecreaseQuantity(event) {
-    let currentEl = event.target.parentElement
+function IncreaseAndDecrease(event, str) {
+    let currentEl = event.target.parentElement;
     let quantityValue = currentEl.parentElement.querySelector('#quantity-value');
     let quantityCost = currentEl.parentElement.querySelector('#cost');
     let individualCost = currentEl.parentElement.querySelector('#price');
     let quantityValueNumber = parseInt(quantityValue.innerHTML);
     let individualCostNumber = parseInt(individualCost.innerHTML);
 
-    if (quantityValueNumber > 0 && quantityValueNumber <= 30) {
-        quantityValueNumber -= 1;
-        quantityValue.innerHTML = quantityValueNumber;
-        quantityCost.innerHTML = quantityValueNumber * individualCostNumber
-
-
+    if (str == "add") {
+        if (quantityValueNumber >= 0 && quantityValueNumber < 10) {
+            quantityValueNumber += 1;
+            quantityValue.innerHTML = quantityValueNumber;
+            quantityCost.innerHTML = quantityValueNumber * individualCostNumber;
+        }
+    } else {
+        if (quantityValueNumber > 0 && quantityValueNumber < 11) {
+            quantityValueNumber -= 1;
+            quantityValue.innerHTML = quantityValueNumber;
+            quantityCost.innerHTML = quantityValueNumber * individualCostNumber;
+        }
     }
+
+
 }
+
 
 function DeleteCart(e) {
     let elem = e.target.parentElement;

@@ -8,6 +8,7 @@
     z-index: 30;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-direction: row;
     background-color: black;
 }
@@ -36,9 +37,9 @@
 }
 
 #skull-div img {
-    margin: 12px;
-    width: 40px;
-    height: 40px;
+    margin: auto 0;
+    width: 50px;
+    height: 50px;
 }
 
 #skull-div p {
@@ -50,7 +51,7 @@
     height: auto;
     text-align: center;
     width: 100%;
-    background-color: #756654;
+    background-color: #F5F5ED;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +91,7 @@
 }
 
 #cart-heading p {
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 23px;
     text-transform: uppercase;
